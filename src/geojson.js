@@ -19,7 +19,6 @@ function justType(type, TYPE) {
             type: TYPE
         };
     };
-  };
 }
 
 function justCoords(t) {
