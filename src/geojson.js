@@ -19,20 +19,15 @@ function justType(type, TYPE) {
             type: TYPE
         };
     };
+  };
 }
 
 function justCoords(t) {
-    if (t.geometry.coordinates[0] !== undefined &&
-        t.geometry.coordinates[0][0] !== undefined &&
-        t.geometry.coordinates[0][0][0] !== undefined) {
-        return t.geometry.coordinates[0];
-    } else {
-        return t.geometry.coordinates;
-    }
+  return t.geometry.coordinates;
 }
 
 function justProps(t) {
-    return t.properties;
+  return t.properties;
 }
 
 function isType(t) {
